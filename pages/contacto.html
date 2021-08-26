@@ -6,21 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../styles.css" />
-    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Desarrollo Web Front End</h1>
+    <header class="header">
+      <h1 class="title header-title">Desarrollo Web Front End</h1>
 
-      <nav>
-        <a href="/">Home</a>
-        <a href="/pages/contacto.html">Contacto</a>
-        <a href="/pages/productos.html">Productos</a>
+      <nav class="links">
+        <a class="link" href="/">Home</a>
+        <a class="link" href="/pages/contacto.html">Contacto</a>
+        <a class="link" href="/pages/productos.html">Productos</a>
       </nav>
     </header>
 
     <main>
-      <h2>Soy contacto</h2>
+      <h2>Comunicate con nostros!</h2>
+
+      <form id="form">
+        <fieldset>
+          <legend>Informacion de contacto</legend>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" />
+
+          <label for="edad">Edad</label>
+          <input
+            type="number"
+            name="edad"
+            id="edad"
+            min="0"
+            max="120"
+            step="1"
+          />
+          <!-- <label for="apellido">Apellido</label> -->
+          <!-- <input type="checkbox" name="checkbox1" id="input" value="check1" />
+          <input type="checkbox" name="checkbox2" id="input" value="check2" />
+          <input type="checkbox" name="checkbox3" id="input" value="check3" />
+
+          <input type="radio" name="genero" id="input" value="masc" />
+          <input type="radio" name="genero" id="input" value="fem" />
+          <input type="radio" name="genero" id="input" value="otro" /> -->
+
+          <label for="pais">Pais</label>
+          <select name="pais" id="pais">
+            <option value="arg">Argentina</option>
+            <option value="col">Colombia</option>
+            <option value="vzl">Venezuela</option>
+            <option value="bra">Brasil</option>
+          </select>
+          <button type="button" id="sendBtn">Enviar</button>
+        </fieldset>
+      </form>
+      <div class="listado-personas">
+        <h1 class="listado-personas_titulo">Listado de personas</h1>
+        <div id="contenedorPersonas" class="contenedor-personas">
+          <!-- <h3 id="nombreCompletoPersona">-</h3>
+          <h3 id="correoPersona">-</h3>
+          <h4 id="edadPersona">-</h4>
+          <h4 id="paisOrigenPersona">-</h4> -->
+        </div>
+      </div>
     </main>
 
     <footer>
