@@ -10,57 +10,62 @@
         background-color: #000;
       }
     </style> -->
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/resets.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/script.js" defer></script>
   </head>
   <body>
     <!-- <header>
       <h1 style="color: rgba(255, 0, 0)">Hola Icaro!</h1>
       <h1 id="h1">Hola Icaro!</h1>
     </header> -->
+    <div class="header-wrapper">
+      <header class="header">
+        <h1 class="title header-title">Desarrollo Web Front End</h1>
 
-    <header class="header">
-      <h1 class="title header-title">Desarrollo Web Front End</h1>
-
-      <nav class="links">
-        <a class="link" href="/">Home</a>
-        <a class="link" href="/pages/contacto.html">Contacto</a>
-        <a class="link" href="/pages/productos.html">Productos</a>
-      </nav>
-    </header>
+        <nav class="links">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/pages/contacto.html">Contacto</a>
+          <a class="link" href="/pages/productos.html">Productos</a>
+        </nav>
+      </header>
+    </div>
 
     <main class="main home-main">
-      <section>
-        <h2 class="subtitle">Titulo Principal</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          maiores repudiandae inventore enim dignissimos, quae rerum pariatur,
-          vel fugiat ipsum eveniet ad quaerat consequatur esse ullam
-          reprehenderit ipsam, accusamus architecto necessitatibus! Dolorem
-          doloribus illo reiciendis veniam voluptatem magnam et facere nostrum,
-          cum voluptates velit cumque optio aperiam provident ullam pariatur.
-        </p>
-      </section>
+      <div class="main-content">
+        <section>
+          <h2 class="subtitle">Titulo Principal</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            maiores repudiandae inventore enim dignissimos, quae rerum pariatur,
+            vel fugiat ipsum eveniet ad quaerat consequatur esse ullam
+            reprehenderit ipsam, accusamus architecto necessitatibus! Dolorem
+            doloribus illo reiciendis veniam voluptatem magnam et facere
+            nostrum, cum voluptates velit cumque optio aperiam provident ullam
+            pariatur.
+          </p>
+        </section>
 
-      <section>
-        <h2 class="subtitle mayusculas">otro titulo princiapal</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          placeat id ratione rem saepe corrupti iure, harum, quod voluptate
-          consequuntur cum sed molestiae. Voluptas, aliquam aut necessitatibus
-          laborum debitis a vel, perspiciatis eos quia nobis eum repellendus
-          inventore veritatis iure corporis incidunt et? Nostrum consequuntur,
-          quis laborum qui nisi alias.
-        </p>
+        <section>
+          <h2 class="subtitle mayusculas">otro titulo princiapal</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            placeat id ratione rem saepe corrupti iure, harum, quod voluptate
+            consequuntur cum sed molestiae. Voluptas, aliquam aut necessitatibus
+            laborum debitis a vel, perspiciatis eos quia nobis eum repellendus
+            inventore veritatis iure corporis incidunt et? Nostrum consequuntur,
+            quis laborum qui nisi alias.
+          </p>
+        </section>
+      </div>
 
+      <aside class="sidebar">
         <h3 class="subtitle">Titulo secundario</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
           expedita eum corrupti, itaque aspernatur cupiditate enim qui vel eaque
           quos.
         </p>
-      </section>
-      <aside>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo cumque
           aliquid voluptas voluptatem rerum iste est voluptates quaerat vel
